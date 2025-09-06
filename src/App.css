@@ -1,0 +1,14 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  scroll-snap-type: y mandatory;
+}
+section {
+  min-height: 90vh; 
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
