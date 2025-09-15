@@ -5,6 +5,9 @@ import Nayan from "../assets/Nayan.png";
 import Nayanpdf from "../assets/Nayan Nakum.pdf"
 import { MdOutlineFileDownload } from "react-icons/md";
 import Footer from "./Footer";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+
 
 const textLines = [
   { label: "Fullstack Developer" },
@@ -12,7 +15,7 @@ const textLines = [
 ];
 
 const MotionLink = motion(Link);
-const Home = ({ smoothScroll }) => {
+const Home = () => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -24,8 +27,8 @@ const Home = ({ smoothScroll }) => {
 
   return (
     <div>
-      <div className="max-w-6xl mx-auto px-4 flex flex-col-reverse justify-center h-screen md:flex-row items-center gap-14 md:gap-10 mt-17 md:mt-0 scroll-auto">
-        <div className="flex-1 text-center md:text-left">
+      <div className="max-w-6xl mx-auto px-4 flex flex-col-reverse justify-center h-screen md:flex-row items-center gap-20 md:gap-10 mt-17 md:mt-10 scroll-auto">
+        <div className="flex-1 text-center md:text-left md:w-[50%]">
           <motion.h1
             className="text-3xl text-gray-900 sm:text-3xl md:text-5xl lg:text-6xl font-extrabold md:mb-4 leading-tight text-light-background"
             initial={{ y: -50, opacity: 0 }}
@@ -73,11 +76,11 @@ const Home = ({ smoothScroll }) => {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.3, 
+                duration: 0.3,
                 delay: 0.1,
               }}
               whileHover={{
-                scale: 1.03, 
+                scale: 1.03,
                 backgroundColor: "#4f46e5",
                 boxShadow: "0 5px 10px -2px rgba(79, 70, 229, 0.3)",
                 transition: { duration: 0.15 },
@@ -141,6 +144,30 @@ const Home = ({ smoothScroll }) => {
             <span className="text-2xl animate-bounce"><MdOutlineFileDownload /></span>
             <span>Download Resume</span>
           </motion.a>
+          <div className="md:flex py-7 gap-5 hidden">
+            <a
+              href="https://github.com/Nakum-Nayan"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 border rounded-full hover:bg-purple-100 transition text-gray-700"
+            >
+              <FaGithub className="text-xl" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/nayan-nakum-10674b374"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 border rounded-full hover:bg-purple-100 transition text-gray-700"
+            >
+              <FaLinkedinIn className="text-xl" />
+            </a>
+            <a
+              href="nayannakum08@gmail.com"
+              className="p-2 border rounded-full hover:bg-purple-100 transition text-gray-700"
+            >
+              <HiOutlineMail className="text-xl" />
+            </a>
+          </div>
         </div>
 
         <motion.div
@@ -156,7 +183,7 @@ const Home = ({ smoothScroll }) => {
           />
         </motion.div>
       </div>
-        <Footer />
+      <Footer />
     </div>
   );
 };

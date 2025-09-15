@@ -45,7 +45,7 @@ export default function About() {
         </motion.p>
 
         {/* Grid Cards */}
-        <div className="mt-6 grid sm:grid-cols-2 gap-4 text-gray-800 text-left">
+        <div className="mt-6 grid sm:grid-cols-2 gap-6 text-gray-800 text-left">
           <motion.div
             variants={item}
             className="p-4 rounded-xl border border-gray-700 bg-[var(--card)] shadow-md hover:shadow-lg transition"
