@@ -6,8 +6,7 @@ This website showcases my skills, projects, and experiences as a developer, alon
 ---
 
 ## 🌐 Live Demo
-[View Portfolio](http://portfolio-mu-lovat-27.vercel.app/)  
-
+[View Portfolio](https://portfolio-kappa-gilt-80.vercel.app/)
 ---
 
 ## ✨ Features
