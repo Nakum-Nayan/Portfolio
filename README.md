@@ -6,7 +6,7 @@ This website showcases my skills, projects, and experiences as a developer, alon
 ---
 
 ## 🌐 Live Demo
-[View Portfolio](https://portfolio-nine-beta-84dncb50gk.vercel.app/)
+[View Portfolio](https://portfolio-eta-wheat-28.vercel.app)
 ---
 
 ## ✨ Features
