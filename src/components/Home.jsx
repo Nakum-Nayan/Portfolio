@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import Nayan from "../assets/Nayan.png";
+import Nayan from "../assets/Nayan.jpeg";
 import Nayanpdf from "../assets/Nayan Nakum.pdf"
 import { MdOutlineFileDownload } from "react-icons/md";
 import Footer from "./Footer";
