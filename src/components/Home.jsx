@@ -56,7 +56,6 @@ const Home = () => {
               {textLines[index].label}
             </motion.span>
           </motion.div>
-
           <motion.p
             className="text-base sm:text-lg md:text-xl text-gray-800 max-w-2xl mx-auto md:mx-0 px-2 sm:px-0"
             initial={{ opacity: 0 }}
